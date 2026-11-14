@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-agri-200 selection:text-agri-900;
+  }
+  
+  /* Ensure form elements don't zoom on mobile iOS */
+  input, select, textarea {
+    @apply text-base md:text-sm;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar for data tables and charts */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-slate-100 rounded;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded hover:bg-slate-400 transition-colors;
+  }
+  
+  /* Smooth transitions for interactive cards */
+  .card-interactive {
+    @apply transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover cursor-pointer;
+  }
+}
+
+/* Leaflet Map overrides to match the theme */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 10;
+}
+
+.leaflet-popup-content-wrapper {
+  @apply rounded-lg shadow-card;
+}
+
+/* Recharts overrides for clean tooltips */
+.recharts-default-tooltip {
+  @apply !bg-white !border-slate-200 !shadow-card !rounded-lg !text-sm;
+}
