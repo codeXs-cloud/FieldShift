@@ -5,6 +5,8 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/) 
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v3-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
+Prototype : (https://field-shift-fawn.vercel.app/)
+
 FieldShift is a decision-support platform designed to help small-to-medium scale farmers adapt to changing environmental conditions. By synthesizing NASA Earth observation data with localized farm constraints, FieldShift generates **explainable, highly resilient crop-rotation scenarios** that prioritize soil health, water conservation, and climate adaptability.
 
 ---
